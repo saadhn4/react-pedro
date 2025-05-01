@@ -1,0 +1,14 @@
+//ep 6
+
+1. mounting - component appearing on the screen/starting to exist
+2. unmounnting - component stops appearing on the screen
+3. updating - UI changing depending on something like state or prop
+
+  useEffect(() => {
+    console.log("Component mounted");
+  });
+
+  here everytime i mess with the input it gets console logged. (same if i added [text] as dependency array)
+  if i added a [] at the end, it wont get logged everytime a change occurs, only when it gets mounted aka if i make it show
+
+  Now that i have a return () => {}, everytime i hide the text, it logs component unmounted
